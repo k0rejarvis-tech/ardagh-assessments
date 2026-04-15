@@ -3,298 +3,350 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRMIG - K0re — 286 Ardagh Road ARDA Enhanced Plan Assessment</title>
+<title>Al's Property — 286 Ardagh Road | ARDA Plans Assessment | BCH Land Owner Assessment</title>
 <style>
+  :root {
+    --navy: #1a2744;
+    --navy-mid: #243356;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --earth: #8b6f47;
+    --cream: #f8f5f0;
+    --white: #ffffff;
+    --text: #2c2c2c;
+    --muted: #6b7280;
+    --green: #2d6a4f;
+    --border: #e5e0d8;
+    --red: #dc2626;
+  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0a0f1e; color: #e8eaf6; line-height: 1.6; }
-  .hero { background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #01579b 100%); padding: 60px 40px; text-align: center; border-bottom: 3px solid #4fc3f7; }
-  .hero .logo { font-size: 13px; letter-spacing: 4px; color: #4fc3f7; margin-bottom: 16px; text-transform: uppercase; }
-  .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 12px; }
-  .hero h2 { font-size: 22px; font-weight: 300; color: #b3e5fc; margin-bottom: 24px; }
-  .hero .tagline { font-size: 15px; color: #81d4fa; font-style: italic; }
-  .badges { display: flex; justify-content: center; gap: 16px; margin-top: 28px; flex-wrap: wrap; }
-  .badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(79,195,247,0.4); border-radius: 24px; padding: 8px 20px; font-size: 13px; color: #e1f5fe; }
-  .section { padding: 50px 40px; max-width: 1100px; margin: 0 auto; }
-  .section-title { font-size: 11px; letter-spacing: 3px; color: #4fc3f7; text-transform: uppercase; margin-bottom: 8px; }
-  .section h2 { font-size: 28px; margin-bottom: 32px; border-bottom: 1px solid #1e3a5f; padding-bottom: 12px; }
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
-  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  .card { background: #111827; border: 1px solid #1e3a5f; border-radius: 12px; padding: 24px; }
-  .card.highlight { border-color: #4fc3f7; background: #0d2137; }
-  .card.green { border-color: #43a047; background: #0d2118; }
-  .card.amber { border-color: #f9a825; background: #1c1800; }
-  .metric-label { font-size: 11px; color: #78909c; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-  .metric-value { font-size: 28px; font-weight: 700; color: #4fc3f7; }
-  .metric-value.green { color: #66bb6a; }
-  .metric-value.gold { color: #ffd54f; }
-  .metric-sub { font-size: 12px; color: #546e7a; margin-top: 4px; }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; }
-  th { background: #0d2137; color: #4fc3f7; padding: 12px 16px; text-align: left; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
-  td { padding: 11px 16px; border-bottom: 1px solid #1a2744; }
-  tr:hover td { background: #0d2137; }
-  .stack-bar { margin-bottom: 12px; }
-  .stack-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
-  .stack-track { background: #1e3a5f; border-radius: 4px; height: 20px; overflow: hidden; }
-  .stack-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; font-size: 11px; font-weight: 600; }
-  .fill-blue { background: #1565c0; }
-  .fill-green { background: #2e7d32; }
-  .fill-purple { background: #6a1b9a; }
-  .fill-orange { background: #e65100; }
-  .fill-teal { background: #00695c; }
-  .equity-box { background: linear-gradient(135deg, #1a1a2e, #16213e); border: 2px solid #ffd54f; border-radius: 12px; padding: 28px 32px; margin-top: 24px; }
-  .equity-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #1e3a5f; }
-  .equity-row:last-child { border-bottom: none; }
-  .equity-label { font-size: 13px; color: #90a4ae; }
-  .equity-value { font-size: 15px; font-weight: 700; color: #ffd54f; }
-  .bridge-box { background: linear-gradient(135deg, #1a237e, #283593); border: 2px solid #4fc3f7; border-radius: 16px; padding: 32px 40px; margin-bottom: 0; }
-  .bridge-phases { display: flex; gap: 0; margin-top: 24px; }
-  .bridge-phase { flex: 1; padding: 20px 16px; border-right: 1px solid #1e3a5f; }
-  .bridge-phase:last-child { border-right: none; }
-  .bridge-phase-num { font-size: 11px; letter-spacing: 2px; color: #4fc3f7; text-transform: uppercase; margin-bottom: 6px; }
-  .bridge-phase-title { font-size: 16px; font-weight: 700; color: #e8eaf6; margin-bottom: 8px; }
-  .bridge-phase-amount { font-size: 24px; font-weight: 700; color: #ffd54f; margin-bottom: 6px; }
-  .bridge-phase-desc { font-size: 12px; color: #78909c; }
-  .bridge-arrow { display: flex; align-items: center; padding: 0 8px; color: #4fc3f7; font-size: 24px; }
-  .recommendation-box { background: linear-gradient(135deg, #1b5e20, #2e7d32); border: 2px solid #43a047; border-radius: 16px; padding: 40px; text-align: center; margin-top: 40px; }
-  .recommendation-box h2 { font-size: 36px; color: #a5d6a7; border: none; }
-  .recommendation-box p { color: #c8e6c9; margin-top: 12px; font-size: 16px; }
-  .timeline { display: flex; gap: 0; margin-top: 16px; }
-  .timeline-step { flex: 1; text-align: center; padding: 16px 8px; border-right: 1px solid #1e3a5f; }
-  .timeline-step:last-child { border-right: none; }
-  .timeline-dot { width: 32px; height: 32px; background: #1565c0; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
-  .timeline-title { font-size: 12px; font-weight: 600; color: #4fc3f7; margin-bottom: 4px; }
-  .timeline-desc { font-size: 11px; color: #78909c; }
-  .footer { text-align: center; padding: 40px; border-top: 1px solid #1e3a5f; color: #455a64; font-size: 13px; }
-  .footer strong { color: #4fc3f7; }
-  .density-banner { background: linear-gradient(135deg, #0d2137, #1a237e); border: 2px solid #ffd54f; border-radius: 12px; padding: 20px 28px; margin-top: 24px; display: flex; align-items: center; gap: 20px; }
-  .density-banner-icon { font-size: 36px; }
-  .density-banner-text { flex: 1; }
-  .density-banner-title { font-size: 15px; font-weight: 700; color: #ffd54f; margin-bottom: 4px; }
-  .density-banner-desc { font-size: 13px; color: #90a4ae; }
-  @media (max-width: 768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } .hero h1 { font-size: 28px; } .section { padding: 30px 20px; } .density-banner { flex-direction: column; } }
+  body { font-family: 'Georgia', serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+
+  nav { background: var(--navy); padding: 18px 48px; display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { color: var(--gold); font-size: 1.1rem; font-weight: bold; letter-spacing: 1px; }
+  .nav-sub { color: rgba(255,255,255,0.5); font-size: 0.8rem; font-family: sans-serif; margin-top: 2px; }
+  .nav-tag { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-family: sans-serif; }
+
+  .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #2d4a8a 100%); color: white; padding: 80px 48px 64px; position: relative; overflow: hidden; }
+  .hero::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 60px; background: var(--cream); clip-path: ellipse(55% 100% at 50% 100%); }
+  .hero-eyebrow { color: var(--gold); font-family: sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 16px; }
+  .hero h1 { font-size: 2.6rem; font-weight: normal; line-height: 1.2; max-width: 700px; margin-bottom: 16px; }
+  .hero h1 span { color: var(--gold-light); }
+  .hero-sub { font-family: sans-serif; font-size: 0.95rem; color: rgba(255,255,255,0.75); max-width: 640px; margin-bottom: 36px; }
+  .hero-badges { display: flex; gap: 10px; flex-wrap: wrap; }
+  .badge { background: rgba(255,255,255,0.1); border: 1px solid rgba(201,168,76,0.4); color: var(--gold-light); font-family: sans-serif; font-size: 0.75rem; padding: 5px 12px; border-radius: 20px; }
+
+  .portfolio-strip { background: var(--navy); padding: 40px 48px; }
+  .port-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(1, 1fr); gap: 2px; }
+  .port-card { background: rgba(255,255,255,0.06); padding: 24px 20px; border-top: 3px solid var(--gold); text-align: center; }
+  .port-name { color: var(--gold-light); font-family: sans-serif; font-size: 0.78rem; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.5px; }
+  .port-units { font-size: 2rem; color: white; font-weight: bold; font-family: sans-serif; }
+  .port-label { color: rgba(255,255,255,0.45); font-family: sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+  .port-tpc { color: var(--gold); font-family: sans-serif; font-size: 0.85rem; font-weight: bold; margin-top: 8px; }
+
+  .prop-section { padding: 0; border-bottom: 4px solid var(--navy); }
+  .prop-header { background: var(--navy); padding: 36px 48px 28px; }
+  .prop-number { color: var(--gold); font-family: sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px; }
+  .prop-title { color: white; font-size: 1.8rem; font-weight: normal; margin-bottom: 6px; }
+  .prop-sub { color: rgba(255,255,255,0.6); font-family: sans-serif; font-size: 0.88rem; }
+  .prop-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .prop-badge { background: rgba(255,255,255,0.08); border: 1px solid rgba(201,168,76,0.3); color: var(--gold-light); font-family: sans-serif; font-size: 0.72rem; padding: 4px 10px; border-radius: 12px; }
+  .prop-badge.red { border-color: rgba(220,38,38,0.5); color: #fca5a5; }
+  .prop-badge.green { border-color: rgba(45,106,79,0.5); color: #86efac; }
+
+  .prop-body { padding: 40px 48px; max-width: 1200px; margin: 0 auto; }
+  .prop-kpi { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 40px; }
+  .kpi-box { background: white; border: 1px solid var(--border); border-top: 3px solid var(--gold); padding: 18px 14px; text-align: center; }
+  .kpi-v { font-size: 1.45rem; font-weight: bold; font-family: sans-serif; color: var(--navy); display: block; margin-bottom: 4px; }
+  .kpi-v.green { color: var(--green); }
+  .kpi-v.red { color: var(--red); }
+  .kpi-l { font-size: 0.65rem; color: var(--muted); font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 28px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-bottom: 28px; }
+  .card { background: white; border: 1px solid var(--border); border-radius: 3px; padding: 24px 20px; }
+  .card-gold { border-top: 3px solid var(--gold); }
+  .card-green { border-top: 3px solid var(--green); }
+  .card-red { border-top: 3px solid var(--red); }
+
+  h3 { font-size: 1rem; color: var(--navy); margin-bottom: 12px; font-weight: bold; }
+
+  .dt { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 0.84rem; }
+  .dt th { background: var(--navy); color: white; padding: 8px 12px; text-align: left; font-weight: 600; font-size: 0.74rem; }
+  .dt td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  .dt tr:nth-child(even) td { background: #faf9f7; }
+  .dt tr:last-child td { border-bottom: none; }
+  .dt .tot td { background: var(--navy); color: white; font-weight: bold; }
+  .dt .hl td { background: #fff8e6; font-weight: 600; color: var(--navy); }
+  td.r { text-align: right; font-variant-numeric: tabular-nums; }
+  td.g { color: var(--green); font-weight: bold; }
+  td.w { color: #b45309; font-weight: bold; }
+  td.red { color: var(--red); font-weight: bold; }
+
+  .stack-bar { display: flex; height: 40px; border-radius: 3px; overflow: hidden; margin: 14px 0; }
+  .ss { display: flex; align-items: center; justify-content: center; font-family: sans-serif; font-size: 0.68rem; font-weight: bold; color: white; }
+  .ss-d { background: #1a2744; flex: 50; }
+  .ss-b { background: #c9a84c; flex: 40; }
+  .ss-m { background: #2d6a4f; flex: 5; }
+  .ss-e { background: #8b6f47; flex: 5; }
+
+  .flags-block { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+  .flag { display: flex; gap: 12px; padding: 10px 14px; border-radius: 3px; font-family: sans-serif; font-size: 0.82rem; }
+  .flag-c { background: #fff1f1; border-left: 3px solid var(--red); }
+  .flag-w { background: #fffbeb; border-left: 3px solid #f59e0b; }
+  .flag-n { background: #eff6ff; border-left: 3px solid #3b82f6; }
+  .flag-a { background: #f0fdf4; border-left: 3px solid var(--green); }
+  .flag-icon { flex-shrink: 0; }
+  .flag strong { display: block; color: var(--navy); margin-bottom: 1px; }
+
+  .feasibility-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .feas-card { border-radius: 3px; padding: 20px 18px; }
+  .feas-bear { background: #fff1f1; border: 1px solid #fca5a5; }
+  .feas-base { background: #f0f9f4; border: 2px solid var(--green); }
+  .feas-bull { background: #fffbeb; border: 1px solid var(--gold); }
+  .feas-label { font-size: 0.68rem; font-family: sans-serif; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+  .feas-val { font-size: 1.6rem; font-weight: bold; font-family: sans-serif; margin-bottom: 4px; }
+  .feas-sub { font-size: 0.75rem; font-family: sans-serif; color: var(--muted); }
+  .feas-rows div { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px solid rgba(0,0,0,0.05); font-family: sans-serif; font-size: 0.78rem; margin-top: 10px; }
+
+  .summary-strip { background: white; border-bottom: 1px solid var(--border); padding: 48px; }
+  .summary-inner { max-width: 1200px; margin: 0 auto; }
+
+  footer { background: var(--navy); color: rgba(255,255,255,0.5); font-family: sans-serif; font-size: 0.75rem; padding: 24px 48px; display: flex; justify-content: space-between; }
+  footer span { color: var(--gold); }
+
+  @media(max-width:900px){
+    .hero, .prop-header, .prop-body, nav, .portfolio-strip, .summary-strip { padding-left: 20px; padding-right: 20px; }
+    .prop-kpi, .port-grid { grid-template-columns: repeat(3,1fr); }
+    .two-col, .three-col, .feasibility-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 8px; }
+  }
 </style>
 </head>
 <body>
+
+<nav>
+  <div>
+    <div class="nav-brand">UBUNTU LTD × TRMIG</div>
+    <div class="nav-sub">Prepared for Al — Land Owner Assessment · ARDA Plans</div>
+  </div>
+  <div class="nav-tag">Confidential — April 15, 2026</div>
+</nav>
+
 <div class="hero">
-  <div class="logo">TRMIG - K0re · Common Ground Initiative</div>
-  <h1>286 Ardagh Road — ARDA Enhanced Plan Assessment</h1>
-  <h2>98-Unit Purpose-Built Rental · BCH / CMHC MLI Select · Heal House Integration</h2>
-  <div class="tagline">Land Restructure Proposal — TRMIG - K0re · Barrie, Ontario · r. Varacalli Architect inc. · Dec 8, 2025 Plan</div>
-  <div class="badges">
-    <div class="badge">✅ DSCR 2.0x</div>
-    <div class="badge">✅ IRR 17.5%</div>
-    <div class="badge">✅ $490K Debt Reduction at First Draw</div>
-    <div class="badge">✅ 30% Affordable Units (BCH)</div>
-    <div class="badge">✅ Zero Construction Risk</div>
-    <div class="badge">✅ Government-Backed</div>
-    <div class="badge">🏥 Heal House Ground Floor</div>
+  <div class="hero-eyebrow">Al's Property — 286 Ardagh Road, Barrie, Ontario</div>
+  <h1>ARDA Plans — <span>6+3-Storey Mixed-Height, ~98 Units</span></h1>
+  <p class="hero-sub">Al, this assessment details the December 2025 ARDA Plans by r. Varacalli Architect inc. for 286 Ardagh Road — a 98-unit mixed-height development with Heal House under a BCH 60/40 land lease structure. Day 1 cash of $1.26M, $23.9M total return over 20 years, and zero cash required from you.</p>
+  <div class="hero-badges">
+    <span class="badge">Build Canada Homes</span>
+    <span class="badge">CMHC MLI Select · 3.4% / 50yr</span>
+    <span class="badge">60/40 Land Lease Structure</span>
+    <span class="badge">~98 Units · 6+3 Storeys</span>
+    <span class="badge">DSCR 1.79x ✅</span>
+    <span class="badge">r. Varacalli Architect inc.</span>
+    <span class="badge">Heal House Ground Floor</span>
+    <span class="badge">Dec 8, 2025</span>
   </div>
 </div>
 
-<div class="section">
-  <div class="section-title">Enhanced Density Vision</div>
-  <h2>ARDA Plan vs. Concept Plan</h2>
-  <div class="density-banner">
-    <div class="density-banner-icon">📈</div>
-    <div class="density-banner-text">
-      <div class="density-banner-title">+36% More Units — 98 Units vs. 72 Units</div>
-      <div class="density-banner-desc">The ARDA Enhanced Plan (r. Varacalli Architect inc., Dec 2025) significantly increases density on the same site through a mixed-height design: 6-storey + 3-storey sections. Additional 26 units generate ~$145K more annual income, higher IRR (17.5% vs 17%), and deeper community impact via ground-floor Heal House integration.</div>
-    </div>
-    <div style="text-align:right; min-width:120px;">
-      <div style="font-size:11px; color:#78909c; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px">Extra Units</div>
-      <div style="font-size:36px; font-weight:700; color:#ffd54f">+26</div>
-      <div style="font-size:12px; color:#66bb6a">+$10.6M project value</div>
+<!-- PLAN SNAPSHOT -->
+<div class="portfolio-strip">
+  <div class="port-grid">
+    <div class="port-card">
+      <div class="port-name">286 Ardagh Road — ARDA Plans (Dec 8, 2025) · r. Varacalli Architect inc.</div>
+      <div class="port-units">~98</div>
+      <div class="port-label">Units · Mixed-Height 6+3 Storeys · Barrie, ON</div>
+      <div class="port-tpc">TPC $50.3M · DSCR 1.79x ✅ · Al's Return $23.9M · BCH Grant $20.1M</div>
     </div>
   </div>
 </div>
 
-<div class="section" style="padding-top:0">
-  <div class="section-title">How It Works — Two Phases</div>
-  <h2>Your Path from Today to Full BCH Structure</h2>
-  <div class="bridge-box">
-    <div style="font-size:13px; color:#81d4fa; margin-bottom:4px">The land is valued at <strong style="color:#ffd54f">$3.5M total</strong>: <strong style="color:#fff">$2.5M NFP land value</strong> + <strong style="color:#66bb6a">$500K approvals</strong> + <strong style="color:#4fc3f7">$500K financing package</strong> to complete the property.</div>
-    <div class="bridge-phases">
-      <div class="bridge-phase">
-        <div class="bridge-phase-num">Phase 1 · Now</div>
-        <div class="bridge-phase-title">LOI Signed</div>
-        <div class="bridge-phase-amount">$200K</div>
-        <div class="bridge-phase-desc">TRMIG - K0re advances $200K to fund permit-ready work (studies, approvals, site prep). No cash out of pocket — this is TRMIG - K0re's investment in the land restructure.</div>
+<!-- ARDA PLAN SECTION -->
+<div class="prop-section">
+  <div class="prop-header">
+    <div class="prop-number">286 Ardagh Road — ARDA Plans · Dec 8, 2025 · r. Varacalli Architect inc.</div>
+    <div class="prop-title">Mixed-Height 6+3 Storey — ~98 Units + Heal House</div>
+    <div class="prop-sub">Barrie, ON · Studios, 1BR, 2BR, Accessible · 107 Parking (96 UG + 11 Visitor) · Indoor Amenity + Roof Terrace (4th Fl)</div>
+    <div class="prop-badges">
+      <span class="prop-badge">6-Storey + 3-Storey</span>
+      <span class="prop-badge">10,246.8 m² Total Site</span>
+      <span class="prop-badge">5,091.8 m² Dev Area</span>
+      <span class="prop-badge">5,155.0 m² EPA</span>
+      <span class="prop-badge">~98 Units</span>
+      <span class="prop-badge">Studios · 1BR · 2BR · Accessible</span>
+      <span class="prop-badge">107 Parking (96 UG + 11 Visitor)</span>
+      <span class="prop-badge">Heal House Ground Floor</span>
+      <span class="prop-badge">Indoor Amenity + Roof Terrace</span>
+      <span class="prop-badge">r. Varacalli Architect inc.</span>
+      <span class="prop-badge green">DSCR 1.79x ✅</span>
+    </div>
+  </div>
+  <div class="prop-body">
+    <div class="prop-kpi">
+      <div class="kpi-box"><span class="kpi-v">$50.3M</span><span class="kpi-l">Total Project Cost</span></div>
+      <div class="kpi-box"><span class="kpi-v green">1.79x</span><span class="kpi-l">DSCR ✅</span></div>
+      <div class="kpi-box"><span class="kpi-v">$1.87M</span><span class="kpi-l">Annual NOI</span></div>
+      <div class="kpi-box"><span class="kpi-v">$827K</span><span class="kpi-l">Yr1 Net Profit</span></div>
+      <div class="kpi-box"><span class="kpi-v">$23.9M</span><span class="kpi-l">Al's 20yr Return</span></div>
+      <div class="kpi-box"><span class="kpi-v green">$3.6M</span><span class="kpi-l">Land Value (est)</span></div>
+    </div>
+
+    <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:3px;padding:16px 20px;margin-bottom:28px;font-family:sans-serif;font-size:0.85rem;color:#14532d">
+      🏗️ <strong>ARDA PLAN ADVANTAGE:</strong> Designed by r. Varacalli Architect inc. (Dec 8, 2025), this plan delivers 36% more units than the Concept Plan (98 vs. 72), a $7.1M larger BCH forgivable grant ($20.1M vs. $13.0M), and $5.7M more in total landowner return over 20 years. The Heal House ground-floor community/wellness space adds $60K/yr in non-residential revenue and enhances BCH scoring for community impact.
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3>Development Costs</h3>
+        <table class="dt">
+          <thead><tr><th>Line Item</th><th class="r">Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Land ($65/sf × 54,809 sf dev area)</td><td class="r">$3,564,000</td></tr>
+            <tr><td>Hard Cost ($340/sf GFA × ~110,000 sf)</td><td class="r">$37,400,000</td></tr>
+            <tr><td>Soft Cost (20%)</td><td class="r">$7,480,000</td></tr>
+            <tr><td>Contingency (5%)</td><td class="r">$1,870,000</td></tr>
+            <tr class="tot"><td>Total Project Cost</td><td class="r">$50,314,000</td></tr>
+            <tr class="hl"><td>Cost Per Unit</td><td class="r">$513,408</td></tr>
+          </tbody>
+        </table>
+        <h3 style="margin-top:20px">Unit Mix by Floor</h3>
+        <table class="dt">
+          <thead><tr><th>Floor / Level</th><th class="r">Units</th><th class="r">Notes</th></tr></thead>
+          <tbody>
+            <tr><td>P1 + P2 (Parking Levels)</td><td class="r">8 units</td><td class="r">Below-grade residential</td></tr>
+            <tr><td>Ground Floor</td><td class="r">9 units</td><td class="r">+ Heal House wellness space</td></tr>
+            <tr><td>Floors 2–3</td><td class="r">21 units each</td><td class="r">42 units total</td></tr>
+            <tr><td>Floors 4–6</td><td class="r">13 units each</td><td class="r">39 units total + roof terrace</td></tr>
+            <tr class="hl"><td>Total</td><td class="r">~98 units</td><td class="r">Studios · 1BR · 2BR · Accessible</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="bridge-arrow">→</div>
-      <div class="bridge-phase">
-        <div class="bridge-phase-num">Phase 2 · Mo. 6–12</div>
-        <div class="bridge-phase-title">Permit Ready</div>
-        <div class="bridge-phase-amount">$3.5M Land</div>
-        <div class="bridge-phase-desc">Land value justified at $3.5M ($2.5M land + $500K approvals + $500K financing). BCH &amp; CMHC applications submitted using ARDA plans. The $200K advance is reimbursed at first draw.</div>
+      <div>
+        <h3>BCH Capital Stack</h3>
+        <div class="stack-bar">
+          <div class="ss ss-d">50%</div>
+          <div class="ss ss-b">40% BCH</div>
+          <div class="ss ss-m">5%</div>
+          <div class="ss ss-e">5%</div>
+        </div>
+        <table class="dt">
+          <thead><tr><th>Source</th><th class="r">%</th><th class="r">Amount</th></tr></thead>
+          <tbody>
+            <tr><td>CMHC MLI Select (3.4%/50yr)</td><td class="r">50%</td><td class="r">$25,157,000</td></tr>
+            <tr><td>BCH Forgivable Grant</td><td class="r">40%</td><td class="r g">$20,125,600</td></tr>
+            <tr><td>Municipal Contribution</td><td class="r">5%</td><td class="r">$2,515,700</td></tr>
+            <tr><td>Owner Equity</td><td class="r">5%</td><td class="r">$2,515,700</td></tr>
+            <tr class="tot"><td>Total</td><td class="r">100%</td><td class="r">$50,314,000</td></tr>
+          </tbody>
+        </table>
+        <h3 style="margin-top:20px">Site &amp; Architecture Details</h3>
+        <table class="dt">
+          <thead><tr><th>Metric</th><th class="r">Value</th></tr></thead>
+          <tbody>
+            <tr><td>Total Site Area</td><td class="r">10,246.8 m² (110,284 sf)</td></tr>
+            <tr><td>Development Area</td><td class="r">5,091.8 m² (54,809 sf)</td></tr>
+            <tr><td>EPA (Environmental Protection)</td><td class="r">5,155.0 m² (~50% of site)</td></tr>
+            <tr><td>Land Value in Capital Stack</td><td class="r">$3,564,000 ($65/sf dev area)</td></tr>
+            <tr><td>Architect</td><td class="r">r. Varacalli Architect inc.</td></tr>
+            <tr><td>Plan Date</td><td class="r">December 8, 2025</td></tr>
+            <tr><td>Parking</td><td class="r">96 UG (48×2 levels) + 11 visitor = 107</td></tr>
+            <tr><td>Amenities</td><td class="r">Indoor amenity + 4th floor roof terrace</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="bridge-arrow">→</div>
-      <div class="bridge-phase">
-        <div class="bridge-phase-num">Phase 3 · First Draw</div>
-        <div class="bridge-phase-title">BCH Structure Live</div>
-        <div class="bridge-phase-amount">$490K</div>
-        <div class="bridge-phase-desc">At first construction draw, $490K in existing debt is cleared via the BCH structure. The bridge phase is replaced by the permanent BCH/CMHC structure. Full project completion: Month 72.</div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3>Revenue &amp; NOI</h3>
+        <table class="dt">
+          <thead><tr><th>Item</th><th class="r">Annual</th></tr></thead>
+          <tbody>
+            <tr><td>Market Rent (69 units × $2,200/mo)</td><td class="r">$1,821,600</td></tr>
+            <tr><td>Affordable Rent (29 units × $1,300/mo)</td><td class="r">$452,400</td></tr>
+            <tr><td>Parking (107 × $75/mo)</td><td class="r">$96,300</td></tr>
+            <tr><td>Heal House (non-residential ground floor)</td><td class="r">$60,000</td></tr>
+            <tr class="hl"><td>Gross Revenue</td><td class="r">$2,430,300</td></tr>
+            <tr><td>Vacancy (3%)</td><td class="r w">-$72,909</td></tr>
+            <tr><td>Effective Revenue</td><td class="r">$2,357,391</td></tr>
+            <tr><td>Total Operating Expenses (20.5%)</td><td class="r w">-$483,265</td></tr>
+            <tr class="hl"><td>NOI</td><td class="r g">$1,874,126</td></tr>
+            <tr><td>Annual Debt Service (CMHC 3.4%/50yr)</td><td class="r w">-$1,047,028</td></tr>
+            <tr class="tot"><td>Year 1 Net Profit</td><td class="r">$827,098</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>Al's Returns — 60/40 Split</h3>
+        <table class="dt">
+          <thead><tr><th>Component</th><th class="r">Amount</th><th class="r">Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Day 1 Land Draw</td><td class="r g">$1,257,850</td><td class="r">Cash at signing (5% of TPC)</td></tr>
+            <tr><td>20yr Income (60% of net profit)</td><td class="r g">$11,900,000</td><td class="r">2.5%/yr rent growth</td></tr>
+            <tr class="hl"><td colspan="3" style="font-size:0.78rem;color:var(--muted);font-style:italic">Year 20 Lump Sum Buyout = Mortgage Paydown + Al's Equity Share</td></tr>
+            <tr><td>&nbsp;&nbsp;→ Mortgage Paydown</td><td class="r">$5,481,000</td><td class="r">$25.2M loan → balance at Yr20</td></tr>
+            <tr><td>&nbsp;&nbsp;→ Al's Equity Share (7.08% × gross equity)</td><td class="r">$5,300,000</td><td class="r">Land % of TPC × gross equity</td></tr>
+            <tr><td><strong>Year 20 Lump Sum Total</strong></td><td class="r g"><strong>$10,781,000</strong></td><td class="r">One-time exit payment</td></tr>
+            <tr class="tot"><td>AL'S TOTAL RETURN</td><td class="r">$23,938,850</td><td class="r">On $0 cash invested</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="section" style="padding-top:0">
-  <div class="section-title">Overview</div>
-  <h2>Project Snapshot</h2>
-  <div class="grid-4">
-    <div class="card highlight"><div class="metric-label">Total Units</div><div class="metric-value">98</div><div class="metric-sub">Purpose-built rental · 6+3 storeys</div></div>
-    <div class="card highlight"><div class="metric-label">Affordable Units (30%)</div><div class="metric-value">30</div><div class="metric-sub">BCH requirement · included in 98</div></div>
-    <div class="card highlight"><div class="metric-label">Total Project Cost</div><div class="metric-value" style="font-size:22px">$40M</div><div class="metric-sub">BCH-funded structure</div></div>
-    <div class="card highlight"><div class="metric-label">Land Value</div><div class="metric-value" style="font-size:22px">$3.5M</div><div class="metric-sub">$2.5M land + $500K approvals + $500K financing</div></div>
-  </div>
-  <div style="margin-top:20px; padding:16px 20px; background:#0d2137; border:1px solid #1e3a5f; border-radius:10px; font-size:13px; color:#78909c;">
-    <strong style="color:#4fc3f7">Site Details:</strong>&nbsp; 286 Ardagh Road, Barrie ON · Total Site: 10,246.8 m² · Development Area: 5,091.8 m² · EPA: 5,155.0 m² · Zoning: RA2-1 · Mixed-Height: 6-storey + 3-storey · Parking: 96 underground + 11 visitor surface = 107 total · Unit Mix: Studios, 1-Bed, 2-Bed, Accessible · Amenity: Indoor + Roof Outdoor Terrace (4th floor)
-  </div>
-  <div style="margin-top:12px; padding:16px 20px; background:#1a1400; border:1px solid #f9a825; border-radius:10px; font-size:13px; color:#90a4ae;">
-    <strong style="color:#ffd54f">🏥 Heal House Integration:</strong>&nbsp; Ground floor includes dedicated Heal House space alongside Lobby, Mail Room, Garage/Loading. Heal House generates community impact value + potential non-residential rental income — a unique differentiator for BCH application and neighbourhood integration.
-  </div>
-</div>
+    <h3>Feasibility — 3-Scenario Analysis</h3>
+    <div class="feasibility-grid">
+      <div class="feas-card feas-bear">
+        <div class="feas-label" style="color:#dc2626">Bear 🔴</div>
+        <div class="feas-val" style="color:#dc2626">1.50x</div>
+        <div class="feas-sub">DSCR — Viable</div>
+        <div class="feas-rows">
+          <div><span>Rent Growth</span><span>1.5%/yr</span></div>
+          <div><span>Vacancy</span><span>6%</span></div>
+          <div><span>NOI</span><span>~$1.57M</span></div>
+          <div><span>LO 20yr Return</span><span>~$18.9M</span></div>
+        </div>
+      </div>
+      <div class="feas-card feas-base">
+        <div class="feas-label" style="color:var(--green)">Base ⚪ — Current</div>
+        <div class="feas-val" style="color:var(--green)">1.79x</div>
+        <div class="feas-sub">DSCR — Strong</div>
+        <div class="feas-rows">
+          <div><span>Rent Growth</span><span>2.5%/yr</span></div>
+          <div><span>Vacancy</span><span>3%</span></div>
+          <div><span>NOI</span><span>$1.87M</span></div>
+          <div><span>LO 20yr Return</span><span>$23.9M</span></div>
+        </div>
+      </div>
+      <div class="feas-card feas-bull">
+        <div class="feas-label" style="color:#92400e">Bull 🟢</div>
+        <div class="feas-val" style="color:#92400e">2.10x</div>
+        <div class="feas-sub">DSCR — Excellent</div>
+        <div class="feas-rows">
+          <div><span>Rent Growth</span><span>3.5%/yr</span></div>
+          <div><span>Vacancy</span><span>1.5%</span></div>
+          <div><span>NOI</span><span>~$2.20M</span></div>
+          <div><span>LO 20yr Return</span><span>~$29.5M</span></div>
+        </div>
+      </div>
+    </div>
 
-<div class="section" style="padding-top:0">
-  <div class="section-title">Financing</div>
-  <h2>BCH Capital Stack</h2>
-  <div class="grid-2">
-    <div class="card">
-      <div class="stack-bar"><div class="stack-label"><span>BCH Grant (40%)</span><span style="color:#66bb6a">$16.0M</span></div><div class="stack-track"><div class="stack-fill fill-green" style="width:40%">40%</div></div></div>
-      <div class="stack-bar"><div class="stack-label"><span>CMHC MLI Select (45%)</span><span style="color:#4fc3f7">$18.0M</span></div><div class="stack-track"><div class="stack-fill fill-blue" style="width:45%">45%</div></div></div>
-      <div class="stack-bar"><div class="stack-label"><span>Municipal Contribution (5%)</span><span style="color:#ce93d8">$2.0M</span></div><div class="stack-track"><div class="stack-fill fill-purple" style="width:5%"></div></div></div>
-      <div class="stack-bar"><div class="stack-label"><span>Your Land Equity (5%)</span><span style="color:#ffcc02">$2.0M</span></div><div class="stack-track"><div class="stack-fill fill-orange" style="width:5%"></div></div></div>
-      <div class="stack-bar"><div class="stack-label"><span>Team Equity (5%)</span><span style="color:#80cbc4">$2.0M</span></div><div class="stack-track"><div class="stack-fill fill-teal" style="width:5%"></div></div></div>
-      <div style="margin-top:16px; padding-top:16px; border-top:1px solid #1e3a5f; display:flex; justify-content:space-between;"><span style="color:#78909c">TOTAL</span><span style="color:#e8eaf6; font-weight:700">$40.0M ✓</span></div>
-    </div>
-    <div class="card">
-      <div class="metric-label" style="margin-bottom:20px">Key Financing Terms</div>
-      <table>
-        <tr><td style="color:#78909c">CMHC Rate</td><td style="text-align:right; color:#4fc3f7">3.40%</td></tr>
-        <tr><td style="color:#78909c">Amortization</td><td style="text-align:right; color:#4fc3f7">50 years</td></tr>
-        <tr><td style="color:#78909c">LTV</td><td style="text-align:right; color:#4fc3f7">95%</td></tr>
-        <tr><td style="color:#78909c">BCH Grant</td><td style="text-align:right; color:#66bb6a">Non-repayable ✓</td></tr>
-        <tr><td style="color:#78909c">Annual Mortgage Payment</td><td style="text-align:right">~$750K</td></tr>
-        <tr><td style="color:#78909c">DSCR</td><td style="text-align:right; color:#66bb6a; font-weight:700">2.0x ✅</td></tr>
-      </table>
-    </div>
-  </div>
-</div>
-
-<div class="section" style="padding-top:0">
-  <div class="section-title">For the Landowner</div>
-  <h2>Your Financial Returns — 20-Year Picture</h2>
-  <div class="grid-3">
-    <div class="card green"><div class="metric-label">Debt Reduction at First Draw</div><div class="metric-value green" style="font-size:32px">$490K</div><div class="metric-sub">Existing debt cleared via BCH first draw — no cash out of pocket</div></div>
-    <div class="card green"><div class="metric-label">Year 1 Annual Income (60% NOI)</div><div class="metric-value green">$545K</div><div class="metric-sub">NFP share · grows ~5% annually</div></div>
-    <div class="card green"><div class="metric-label">Affordable Units</div><div class="metric-value green" style="font-size:32px">30</div><div class="metric-sub">30% of 98 units · BCH requirement met</div></div>
-    <div class="card"><div class="metric-label">Mortgage Paydown @ Yr 20</div><div class="metric-value gold">$4.1M</div><div class="metric-sub">NFP equity growth</div></div>
-    <div class="card"><div class="metric-label">Year 20 Buyout</div><div class="metric-value gold" style="font-size:24px">~$6.1M</div><div class="metric-sub">Full equity return to NFP</div></div>
-    <div class="card highlight"><div class="metric-label">DSCR · IRR</div><div class="metric-value" style="font-size:24px; color:#ffd54f">2.0x · 17.5%</div><div class="metric-sub">Fully government-backed · No cash required</div></div>
-  </div>
-</div>
-
-<div class="section" style="padding-top:0">
-  <div class="section-title">Cash Flow</div>
-  <h2>Operating Income Split</h2>
-  <div class="grid-2">
-    <div class="card highlight"><div class="metric-label">NFP / Land Owner Share</div><div class="metric-value" style="font-size:48px">60%</div><div class="metric-sub">Of all net income after mortgage</div></div>
-    <div class="card"><div class="metric-label">TRMIG - K0re Operating Share</div><div class="metric-value" style="font-size:48px; color:#78909c">40%</div><div class="metric-sub">Dev Manager · Property Manager · Equity Share · Reverse Buyout Option</div></div>
-  </div>
-  <div class="equity-box" style="border-color:#4fc3f7; margin-top:24px">
-    <div style="font-size:13px; letter-spacing:2px; color:#4fc3f7; text-transform:uppercase; margin-bottom:16px">NOI Split Lifecycle — 3 Phases</div>
-    <div class="equity-row">
-      <span class="equity-label"><strong style="color:#e8eaf6">Phase 1</strong> · Operations (Month 1 → Capital Raise)</span>
-      <span class="equity-value" style="color:#4fc3f7">NFP 60% · TRMIG 40%</span>
-    </div>
-    <div class="equity-row">
-      <span class="equity-label"><strong style="color:#e8eaf6">Phase 2</strong> · Post Capital Raise (→ Year 20 Buyout)</span>
-      <span class="equity-value" style="color:#ffd54f">TRMIG 60% · NFP 40%</span>
-    </div>
-    <div class="equity-row">
-      <span class="equity-label"><strong style="color:#e8eaf6">Phase 3</strong> · Year 20 Buyout</span>
-      <span class="equity-value" style="color:#66bb6a">NFP full ownership ✓</span>
-    </div>
-    <div style="margin-top:16px; padding:16px; background:#0d1f35; border-radius:8px; border-left:3px solid #ffd54f">
-      <div style="font-size:12px; color:#ffd54f; font-weight:600; margin-bottom:6px">⚡ Capital Raise Bonus</div>
-      <div style="font-size:12px; color:#90a4ae">If TRMIG raises capital to pay off investors ahead of Month 77, TRMIG earns a bonus on capital raised:</div>
-      <div style="font-size:12px; color:#e8eaf6; margin-top:6px">· Before Month 48: <strong>5% bonus</strong> on capital raised</div>
-      <div style="font-size:12px; color:#e8eaf6">· Month 48–60: <strong>3% bonus</strong> on capital raised</div>
-      <div style="font-size:12px; color:#e8eaf6">· After Month 60: <strong>no bonus</strong> (baseline)</div>
-      <div style="font-size:12px; color:#546e7a; margin-top:6px">Bonus paid from capital raised — not from NFP cash flow. NFP gains unencumbered NOI for the remaining property life.</div>
-    </div>
-  </div>
-  <div class="equity-box">
-    <div style="font-size:13px; letter-spacing:2px; color:#ffd54f; text-transform:uppercase; margin-bottom:16px">Equity Owner Payoff — NFP Reverse Structure</div>
-    <div style="font-size:13px; color:#90a4ae; margin-bottom:20px">NFP-owned = reversed structure. TRMIG - K0re operates as Development Manager + Property Manager + equity partner. Al holds 60% NOI; TRMIG - K0re's 40% covers its operating roles and eventual reverse buyout exit. Heal House ground floor adds non-residential income stream.</div>
-    <div class="equity-row"><span class="equity-label">Land value justified ($2.5M + $500K + $500K)</span><span class="equity-value">$3.5M ✓</span></div>
-    <div class="equity-row"><span class="equity-label">Existing debt cleared at first draw</span><span class="equity-value">$490K ✓</span></div>
-    <div class="equity-row"><span class="equity-label">Construction period</span><span class="equity-value">~36 months</span></div>
-    <div class="equity-row"><span class="equity-label">Lease-up period</span><span class="equity-value">+12 months</span></div>
-    <div class="equity-row"><span class="equity-label">NOI distributions to equity payoff</span><span class="equity-value">+29 months</span></div>
-    <div class="equity-row" style="margin-top:4px"><span class="equity-label" style="color:#e8eaf6; font-weight:600">Equity owners fully paid off by</span><span class="equity-value" style="color:#66bb6a; font-size:18px">~Month 77 🎉</span></div>
-    <div style="font-size:12px; color:#546e7a; margin-top:12px">⚡ Possible acceleration via construction cost savings or Heal House income — conservative baseline is Month 77.</div>
-  </div>
-</div>
-
-<div class="section" style="padding-top:0">
-  <div class="section-title">Risk Profile</div>
-  <h2>Your Protections</h2>
-  <div class="grid-2">
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">🏗️</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">Zero Construction Risk</div><div style="font-size:13px; color:#78909c">Fixed-price Cube modular contracts. Cost overruns are never your problem.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">🏛️</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">CMHC Senior Lender</div><div style="font-size:13px; color:#78909c">Government-backed mortgage insurance — safest financing structure in Canada.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">💰</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">No Cash Required</div><div style="font-size:13px; color:#78909c">Your land is your equity. Zero cash out of pocket at any stage.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">📋</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">Legally Binding Docs</div><div style="font-size:13px; color:#78909c">Full LOI, Land Lease Agreement &amp; PSA — every term documented and enforceable.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">🔒</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">Guaranteed Exit</div><div style="font-size:13px; color:#78909c">NFP contractually obligated to purchase land at Year 20 at fair-market value.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">⚡</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">Fast Delivery</div><div style="font-size:13px; color:#78909c">Cube modular systems — income begins within 18 months of LOI signing.</div></div>
-  </div>
-</div>
-
-<div class="section" style="padding-top:0">
-  <div class="section-title">Process</div>
-  <h2>Timeline to Income</h2>
-  <div class="card">
-    <div class="timeline">
-      <div class="timeline-step"><div class="timeline-dot">1</div><div class="timeline-title">Now</div><div class="timeline-desc">LOI Signed · $200K advanced</div></div>
-      <div class="timeline-step"><div class="timeline-dot">2</div><div class="timeline-title">Mo. 1–6</div><div class="timeline-desc">PSA Executed · Permit-ready work begins (ARDA plans)</div></div>
-      <div class="timeline-step"><div class="timeline-dot">3</div><div class="timeline-title">Mo. 6–12</div><div class="timeline-desc">BCH / CMHC Approval · Land → $3.5M</div></div>
-      <div class="timeline-step"><div class="timeline-dot">4</div><div class="timeline-title">First Draw</div><div class="timeline-desc">$490K debt cleared · BCH structure live</div></div>
-      <div class="timeline-step"><div class="timeline-dot">5</div><div class="timeline-title">Mo. 12–18</div><div class="timeline-desc">Construction (Cube modular · 6+3 storey)</div></div>
-      <div class="timeline-step"><div class="timeline-dot">6</div><div class="timeline-title">Mo. 36</div><div class="timeline-desc">Construction complete · Heal House open</div></div>
-      <div class="timeline-step"><div class="timeline-dot">7</div><div class="timeline-title">Mo. 48</div><div class="timeline-desc">Lease-up complete · Income begins 🎉</div></div>
-      <div class="timeline-step"><div class="timeline-dot">8</div><div class="timeline-title">Mo. 77</div><div class="timeline-desc">Equity owners paid off · Reverse buyout option</div></div>
+    <div class="flags-block">
+      <div class="flag flag-a"><span class="flag-icon">✅</span><div><strong>DSCR 1.79x — Strong BCH Viability</strong>Comfortably above the 1.20x minimum threshold. Both CMHC MLI Select and BCH grant qualification are achievable at current cost and revenue assumptions.</div></div>
+      <div class="flag flag-a"><span class="flag-icon">✅</span><div><strong>+36% More Units Than Concept Plan (98 vs. 72)</strong>More units per dollar of land means better BCH scoring, more rental income, and a significantly higher total landowner return ($23.9M vs. $18.2M over 20 years).</div></div>
+      <div class="flag flag-a"><span class="flag-icon">✅</span><div><strong>Heal House Adds Community Impact + Non-Residential Revenue</strong>Ground-floor community/wellness space generates $60,000/yr in additional revenue and significantly strengthens BCH community impact scoring. A key differentiator versus the Concept Plan.</div></div>
+      <div class="flag flag-w"><span class="flag-icon">⚠️</span><div><strong>Higher Construction Cost ($340/sf vs. $285/sf for Concept Plan)</strong>Mixed-height construction (6+3 storeys) carries a higher hard cost premium. Confirm with QS — actual savings from shared underground parking may partially offset this on a per-unit basis.</div></div>
+      <div class="flag flag-w"><span class="flag-icon">⚠️</span><div><strong>DSCR Tighter Than Concept Plan (1.79x vs. 2.0x)</strong>Still strong and BCH-compliant, but less buffer against downside scenarios. Ensure rent assumptions are conservative and operating costs are properly modeled before submission.</div></div>
+      <div class="flag flag-w"><span class="flag-icon">⚠️</span><div><strong>EPA Constraints Same — 50% of Site Protected</strong>The same environmental protection area applies to both plans. Development is constrained to the 5,091.8 m² non-EPA portion. Already factored into land value and cost assumptions.</div></div>
+      <div class="flag flag-n"><span class="flag-icon">ℹ️</span><div><strong>Mixed-Height (6+3 Storeys) May Need Specific Zoning Review</strong>Confirm that the combined 6+3-storey massing is compatible with RA2-1 zoning and/or whether a zoning amendment or site-specific provision is required for the 3-storey component placement on site.</div></div>
+      <div class="flag flag-a"><span class="flag-icon">📋</span><div><strong>Enhanced Density Unlocks Higher BCH Grant ($20.1M vs. $13.0M)</strong>The larger unit count and mixed-use programming qualify for a $7.1M larger BCH forgivable grant — a meaningful improvement in project financing that directly benefits overall viability and reduces equity requirements.</div></div>
     </div>
   </div>
 </div>
 
-<div class="section" style="padding-top:0">
-  <div class="recommendation-box">
-    <div style="font-size:13px; letter-spacing:3px; color:#81c784; text-transform:uppercase; margin-bottom:12px">Recommendation</div>
-    <h2>🔄 RE-STRUCTURE</h2>
-    <p>Land value justified at $3.5M ($2.5M NFP land + $500K approvals + $500K financing) · DSCR 2.0x · IRR 17.5%</p>
-    <p style="margin-top:8px; font-size:13px; color:#a5d6a7">NFP-owned reverse structure: TRMIG - K0re as Dev Manager + Property Manager + Equity Partner with reverse buyout option · 98 units · 30 affordable · Heal House ground floor · Mixed-height 6+3 storeys</p>
-  </div>
-</div>
+<footer>
+  <div><span>Ubuntu LTD × TRMIG</span> — Al's Property · 286 Ardagh Road, Barrie · ARDA Plans Assessment</div>
+  <div>Prepared exclusively for Al — Confidential — April 15, 2026</div>
+</footer>
 
-<div class="section" style="padding-top:0">
-  <div class="section-title">Action</div>
-  <h2>Next Steps</h2>
-  <div class="card">
-    <table>
-      <tr><td style="width:32px; font-size:18px">✅</td><td>Review this proposal with your family or legal advisor</td></tr>
-      <tr><td style="font-size:18px">✅</td><td>Schedule a site walkthrough with Calvin Lee / TRMIG - K0re</td></tr>
-      <tr><td style="font-size:18px">✅</td><td>Sign Letter of Intent (LOI) — 12-month exclusivity period</td></tr>
-      <tr><td style="font-size:18px">✅</td><td>Ubuntu LTD submits BCH &amp; CMHC financing applications (based on ARDA plans)</td></tr>
-      <tr><td style="font-size:18px">✅</td><td>Proceed to Purchase &amp; Sale Agreement (PSA)</td></tr>
-    </table>
-  </div>
-</div>
-
-<div class="footer">
-  <strong>Calvin Lee</strong> · TRMIG - K0re · Common Ground Initiative<br>
-  Confidential — Prepared for Al · April 2026<br><br>
-  <em>286 Ardagh Road, Barrie ON · ARDA Enhanced Plan (Dec 8, 2025) · r. Varacalli Architect inc. · Land Restructure · NFP-Owned · TRMIG - K0re as Operating Partner</em>
-</div>
 </body>
 </html>
