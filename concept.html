@@ -3,271 +3,327 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TRMIG - K0re — 286 Ardagh Road Concept Plan Assessment</title>
+<title>Al's Property — 286 Ardagh Road | Concept Plan Assessment | BCH Land Owner Assessment</title>
 <style>
+  :root {
+    --navy: #1a2744;
+    --navy-mid: #243356;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --earth: #8b6f47;
+    --cream: #f8f5f0;
+    --white: #ffffff;
+    --text: #2c2c2c;
+    --muted: #6b7280;
+    --green: #2d6a4f;
+    --border: #e5e0d8;
+    --red: #dc2626;
+  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; background: #0a0f1e; color: #e8eaf6; line-height: 1.6; }
-  .hero { background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #01579b 100%); padding: 60px 40px; text-align: center; border-bottom: 3px solid #4fc3f7; }
-  .hero .logo { font-size: 13px; letter-spacing: 4px; color: #4fc3f7; margin-bottom: 16px; text-transform: uppercase; }
-  .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 12px; }
-  .hero h2 { font-size: 22px; font-weight: 300; color: #b3e5fc; margin-bottom: 24px; }
-  .hero .tagline { font-size: 15px; color: #81d4fa; font-style: italic; }
-  .badges { display: flex; justify-content: center; gap: 16px; margin-top: 28px; flex-wrap: wrap; }
-  .badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(79,195,247,0.4); border-radius: 24px; padding: 8px 20px; font-size: 13px; color: #e1f5fe; }
-  .section { padding: 50px 40px; max-width: 1100px; margin: 0 auto; }
-  .section-title { font-size: 11px; letter-spacing: 3px; color: #4fc3f7; text-transform: uppercase; margin-bottom: 8px; }
-  .section h2 { font-size: 28px; margin-bottom: 32px; border-bottom: 1px solid #1e3a5f; padding-bottom: 12px; }
-  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
-  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  .card { background: #111827; border: 1px solid #1e3a5f; border-radius: 12px; padding: 24px; }
-  .card.highlight { border-color: #4fc3f7; background: #0d2137; }
-  .card.green { border-color: #43a047; background: #0d2118; }
-  .metric-label { font-size: 11px; color: #78909c; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
-  .metric-value { font-size: 28px; font-weight: 700; color: #4fc3f7; }
-  .metric-value.green { color: #66bb6a; }
-  .metric-value.gold { color: #ffd54f; }
-  .metric-sub { font-size: 12px; color: #546e7a; margin-top: 4px; }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; }
-  th { background: #0d2137; color: #4fc3f7; padding: 12px 16px; text-align: left; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
-  td { padding: 11px 16px; border-bottom: 1px solid #1a2744; }
-  tr:hover td { background: #0d2137; }
-  .stack-bar { margin-bottom: 12px; }
-  .stack-label { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
-  .stack-track { background: #1e3a5f; border-radius: 4px; height: 20px; overflow: hidden; }
-  .stack-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 8px; font-size: 11px; font-weight: 600; }
-  .fill-blue { background: #1565c0; }
-  .fill-green { background: #2e7d32; }
-  .fill-purple { background: #6a1b9a; }
-  .fill-orange { background: #e65100; }
-  .fill-teal { background: #00695c; }
-  .equity-box { background: linear-gradient(135deg, #1a1a2e, #16213e); border: 2px solid #ffd54f; border-radius: 12px; padding: 28px 32px; margin-top: 24px; }
-  .equity-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #1e3a5f; }
-  .equity-row:last-child { border-bottom: none; }
-  .equity-label { font-size: 13px; color: #90a4ae; }
-  .equity-value { font-size: 15px; font-weight: 700; color: #ffd54f; }
-  .bridge-box { background: linear-gradient(135deg, #1a237e, #283593); border: 2px solid #4fc3f7; border-radius: 16px; padding: 32px 40px; margin-bottom: 0; }
-  .bridge-phases { display: flex; gap: 0; margin-top: 24px; }
-  .bridge-phase { flex: 1; padding: 20px 16px; border-right: 1px solid #1e3a5f; }
-  .bridge-phase:last-child { border-right: none; }
-  .bridge-phase-num { font-size: 11px; letter-spacing: 2px; color: #4fc3f7; text-transform: uppercase; margin-bottom: 6px; }
-  .bridge-phase-title { font-size: 16px; font-weight: 700; color: #e8eaf6; margin-bottom: 8px; }
-  .bridge-phase-amount { font-size: 24px; font-weight: 700; color: #ffd54f; margin-bottom: 6px; }
-  .bridge-phase-desc { font-size: 12px; color: #78909c; }
-  .bridge-arrow { display: flex; align-items: center; padding: 0 8px; color: #4fc3f7; font-size: 24px; }
-  .recommendation-box { background: linear-gradient(135deg, #1b5e20, #2e7d32); border: 2px solid #43a047; border-radius: 16px; padding: 40px; text-align: center; margin-top: 40px; }
-  .recommendation-box h2 { font-size: 36px; color: #a5d6a7; border: none; }
-  .recommendation-box p { color: #c8e6c9; margin-top: 12px; font-size: 16px; }
-  .timeline { display: flex; gap: 0; margin-top: 16px; }
-  .timeline-step { flex: 1; text-align: center; padding: 16px 8px; border-right: 1px solid #1e3a5f; }
-  .timeline-step:last-child { border-right: none; }
-  .timeline-dot { width: 32px; height: 32px; background: #1565c0; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
-  .timeline-title { font-size: 12px; font-weight: 600; color: #4fc3f7; margin-bottom: 4px; }
-  .timeline-desc { font-size: 11px; color: #78909c; }
-  .footer { text-align: center; padding: 40px; border-top: 1px solid #1e3a5f; color: #455a64; font-size: 13px; }
-  .footer strong { color: #4fc3f7; }
-  @media (max-width: 768px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } .hero h1 { font-size: 28px; } .section { padding: 30px 20px; } }
+  body { font-family: 'Georgia', serif; background: var(--cream); color: var(--text); line-height: 1.7; }
+
+  nav { background: var(--navy); padding: 18px 48px; display: flex; justify-content: space-between; align-items: center; }
+  .nav-brand { color: var(--gold); font-size: 1.1rem; font-weight: bold; letter-spacing: 1px; }
+  .nav-sub { color: rgba(255,255,255,0.5); font-size: 0.8rem; font-family: sans-serif; margin-top: 2px; }
+  .nav-tag { color: rgba(255,255,255,0.6); font-size: 0.8rem; font-family: sans-serif; }
+
+  .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #2d4a8a 100%); color: white; padding: 80px 48px 64px; position: relative; overflow: hidden; }
+  .hero::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 60px; background: var(--cream); clip-path: ellipse(55% 100% at 50% 100%); }
+  .hero-eyebrow { color: var(--gold); font-family: sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 16px; }
+  .hero h1 { font-size: 2.6rem; font-weight: normal; line-height: 1.2; max-width: 700px; margin-bottom: 16px; }
+  .hero h1 span { color: var(--gold-light); }
+  .hero-sub { font-family: sans-serif; font-size: 0.95rem; color: rgba(255,255,255,0.75); max-width: 640px; margin-bottom: 36px; }
+  .hero-badges { display: flex; gap: 10px; flex-wrap: wrap; }
+  .badge { background: rgba(255,255,255,0.1); border: 1px solid rgba(201,168,76,0.4); color: var(--gold-light); font-family: sans-serif; font-size: 0.75rem; padding: 5px 12px; border-radius: 20px; }
+
+  .portfolio-strip { background: var(--navy); padding: 40px 48px; }
+  .port-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(1, 1fr); gap: 2px; }
+  .port-card { background: rgba(255,255,255,0.06); padding: 24px 20px; border-top: 3px solid var(--gold); text-align: center; }
+  .port-name { color: var(--gold-light); font-family: sans-serif; font-size: 0.78rem; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.5px; }
+  .port-units { font-size: 2rem; color: white; font-weight: bold; font-family: sans-serif; }
+  .port-label { color: rgba(255,255,255,0.45); font-family: sans-serif; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+  .port-tpc { color: var(--gold); font-family: sans-serif; font-size: 0.85rem; font-weight: bold; margin-top: 8px; }
+
+  .prop-section { padding: 0; border-bottom: 4px solid var(--navy); }
+  .prop-header { background: var(--navy); padding: 36px 48px 28px; }
+  .prop-number { color: var(--gold); font-family: sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px; }
+  .prop-title { color: white; font-size: 1.8rem; font-weight: normal; margin-bottom: 6px; }
+  .prop-sub { color: rgba(255,255,255,0.6); font-family: sans-serif; font-size: 0.88rem; }
+  .prop-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .prop-badge { background: rgba(255,255,255,0.08); border: 1px solid rgba(201,168,76,0.3); color: var(--gold-light); font-family: sans-serif; font-size: 0.72rem; padding: 4px 10px; border-radius: 12px; }
+  .prop-badge.red { border-color: rgba(220,38,38,0.5); color: #fca5a5; }
+  .prop-badge.green { border-color: rgba(45,106,79,0.5); color: #86efac; }
+
+  .prop-body { padding: 40px 48px; max-width: 1200px; margin: 0 auto; }
+  .prop-kpi { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 40px; }
+  .kpi-box { background: white; border: 1px solid var(--border); border-top: 3px solid var(--gold); padding: 18px 14px; text-align: center; }
+  .kpi-v { font-size: 1.45rem; font-weight: bold; font-family: sans-serif; color: var(--navy); display: block; margin-bottom: 4px; }
+  .kpi-v.green { color: var(--green); }
+  .kpi-v.red { color: var(--red); }
+  .kpi-l { font-size: 0.65rem; color: var(--muted); font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 28px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-bottom: 28px; }
+  .card { background: white; border: 1px solid var(--border); border-radius: 3px; padding: 24px 20px; }
+  .card-gold { border-top: 3px solid var(--gold); }
+  .card-green { border-top: 3px solid var(--green); }
+  .card-red { border-top: 3px solid var(--red); }
+
+  h3 { font-size: 1rem; color: var(--navy); margin-bottom: 12px; font-weight: bold; }
+
+  .dt { width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 0.84rem; }
+  .dt th { background: var(--navy); color: white; padding: 8px 12px; text-align: left; font-weight: 600; font-size: 0.74rem; }
+  .dt td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  .dt tr:nth-child(even) td { background: #faf9f7; }
+  .dt tr:last-child td { border-bottom: none; }
+  .dt .tot td { background: var(--navy); color: white; font-weight: bold; }
+  .dt .hl td { background: #fff8e6; font-weight: 600; color: var(--navy); }
+  td.r { text-align: right; font-variant-numeric: tabular-nums; }
+  td.g { color: var(--green); font-weight: bold; }
+  td.w { color: #b45309; font-weight: bold; }
+  td.red { color: var(--red); font-weight: bold; }
+
+  .stack-bar { display: flex; height: 40px; border-radius: 3px; overflow: hidden; margin: 14px 0; }
+  .ss { display: flex; align-items: center; justify-content: center; font-family: sans-serif; font-size: 0.68rem; font-weight: bold; color: white; }
+  .ss-d { background: #1a2744; flex: 50; }
+  .ss-b { background: #c9a84c; flex: 40; }
+  .ss-m { background: #2d6a4f; flex: 5; }
+  .ss-e { background: #8b6f47; flex: 5; }
+
+  .flags-block { margin-top: 20px; display: flex; flex-direction: column; gap: 8px; }
+  .flag { display: flex; gap: 12px; padding: 10px 14px; border-radius: 3px; font-family: sans-serif; font-size: 0.82rem; }
+  .flag-c { background: #fff1f1; border-left: 3px solid var(--red); }
+  .flag-w { background: #fffbeb; border-left: 3px solid #f59e0b; }
+  .flag-n { background: #eff6ff; border-left: 3px solid #3b82f6; }
+  .flag-a { background: #f0fdf4; border-left: 3px solid var(--green); }
+  .flag-icon { flex-shrink: 0; }
+  .flag strong { display: block; color: var(--navy); margin-bottom: 1px; }
+
+  .feasibility-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .feas-card { border-radius: 3px; padding: 20px 18px; }
+  .feas-bear { background: #fff1f1; border: 1px solid #fca5a5; }
+  .feas-base { background: #f0f9f4; border: 2px solid var(--green); }
+  .feas-bull { background: #fffbeb; border: 1px solid var(--gold); }
+  .feas-label { font-size: 0.68rem; font-family: sans-serif; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+  .feas-val { font-size: 1.6rem; font-weight: bold; font-family: sans-serif; margin-bottom: 4px; }
+  .feas-sub { font-size: 0.75rem; font-family: sans-serif; color: var(--muted); }
+  .feas-rows div { display: flex; justify-content: space-between; padding: 3px 0; border-bottom: 1px solid rgba(0,0,0,0.05); font-family: sans-serif; font-size: 0.78rem; margin-top: 10px; }
+
+  .summary-strip { background: white; border-bottom: 1px solid var(--border); padding: 48px; }
+  .summary-inner { max-width: 1200px; margin: 0 auto; }
+
+  footer { background: var(--navy); color: rgba(255,255,255,0.5); font-family: sans-serif; font-size: 0.75rem; padding: 24px 48px; display: flex; justify-content: space-between; }
+  footer span { color: var(--gold); }
+
+  @media(max-width:900px){
+    .hero, .prop-header, .prop-body, nav, .portfolio-strip, .summary-strip { padding-left: 20px; padding-right: 20px; }
+    .prop-kpi, .port-grid { grid-template-columns: repeat(3,1fr); }
+    .two-col, .three-col, .feasibility-grid { grid-template-columns: 1fr; }
+    footer { flex-direction: column; gap: 8px; }
+  }
 </style>
 </head>
 <body>
+
+<nav>
+  <div>
+    <div class="nav-brand">UBUNTU LTD × TRMIG</div>
+    <div class="nav-sub">Prepared for Al — Land Owner Assessment · Concept Plan</div>
+  </div>
+  <div class="nav-tag">Confidential — April 15, 2026</div>
+</nav>
+
 <div class="hero">
-  <div class="logo">TRMIG - K0re · Common Ground Initiative</div>
-  <h1>286 Ardagh Road — Concept Plan Assessment</h1>
-  <h2>72-Unit Purpose-Built Rental · BCH / CMHC MLI Select</h2>
-  <div class="tagline">Land Restructure Proposal — TRMIG - K0re · Barrie, Ontario · Oct 19, 2023 Plan</div>
-  <div class="badges">
-    <div class="badge">✅ DSCR 2.0x</div>
-    <div class="badge">✅ IRR 17%</div>
-    <div class="badge">✅ $360K Debt Reduction at First Draw</div>
-    <div class="badge">✅ 30% Affordable Units (BCH)</div>
-    <div class="badge">✅ Zero Construction Risk</div>
-    <div class="badge">✅ Government-Backed</div>
+  <div class="hero-eyebrow">Al's Property — 286 Ardagh Road, Barrie, Ontario</div>
+  <h1>Concept Plan — <span>6-Storey Apartment, 72 Units</span></h1>
+  <p class="hero-sub">Al, this assessment details the October 2023 Concept Plan for 286 Ardagh Road — a 72-unit, 6-storey apartment under a BCH 60/40 land lease structure. Day 1 cash of $811K, $18.2M total return over 20 years, and zero cash required from you.</p>
+  <div class="hero-badges">
+    <span class="badge">Build Canada Homes</span>
+    <span class="badge">CMHC MLI Select · 3.4% / 50yr</span>
+    <span class="badge">60/40 Land Lease Structure</span>
+    <span class="badge">72 Units · 6 Storeys</span>
+    <span class="badge">DSCR 2.0x ✅</span>
+    <span class="badge">Oct 19, 2023 Concept</span>
   </div>
 </div>
 
-<div class="section">
-  <div class="section-title">How It Works — Two Phases</div>
-  <h2>Your Path from Today to Full BCH Structure</h2>
-  <div class="bridge-box">
-    <div style="font-size:13px; color:#81d4fa; margin-bottom:4px">The land is valued at <strong style="color:#ffd54f">$3.5M total</strong>: <strong style="color:#fff">$2.5M NFP land value</strong> + <strong style="color:#66bb6a">$500K approvals</strong> + <strong style="color:#4fc3f7">$500K financing package</strong> to complete the property.</div>
-    <div class="bridge-phases">
-      <div class="bridge-phase">
-        <div class="bridge-phase-num">Phase 1 · Now</div>
-        <div class="bridge-phase-title">LOI Signed</div>
-        <div class="bridge-phase-amount">$200K</div>
-        <div class="bridge-phase-desc">TRMIG - K0re advances $200K to fund permit-ready work (studies, approvals, site prep). No cash out of pocket — this is TRMIG - K0re's investment in the land restructure.</div>
+<!-- PLAN SNAPSHOT -->
+<div class="portfolio-strip">
+  <div class="port-grid">
+    <div class="port-card">
+      <div class="port-name">286 Ardagh Road — Concept Plan (Oct 2023)</div>
+      <div class="port-units">72</div>
+      <div class="port-label">Units · 6-Storey Apartment · Barrie, ON</div>
+      <div class="port-tpc">TPC $32.5M · DSCR 2.0x ✅ · Al's Return $18.2M</div>
+    </div>
+  </div>
+</div>
+
+<!-- CONCEPT PLAN SECTION -->
+<div class="prop-section">
+  <div class="prop-header">
+    <div class="prop-number">286 Ardagh Road — Concept Plan · Oct 19, 2023</div>
+    <div class="prop-title">6-Storey Apartment — 72 Units</div>
+    <div class="prop-sub">Barrie, ON · Zoning: RA2-1 · GFA 7,533 m² (81,085 sf) · 93 Parking Spaces · Height: 19.7m (max 30m)</div>
+    <div class="prop-badges">
+      <span class="prop-badge">Zoning RA2-1</span>
+      <span class="prop-badge">10,246.8 m² Total Site</span>
+      <span class="prop-badge">5,091.8 m² Dev Area</span>
+      <span class="prop-badge">5,155.0 m² EPA</span>
+      <span class="prop-badge">72 Units · 141.4 upha</span>
+      <span class="prop-badge">GFA 7,533 m²</span>
+      <span class="prop-badge">Footprint 1,255.4 m²</span>
+      <span class="prop-badge">24.4% Lot Coverage</span>
+      <span class="prop-badge">36.7% Landscaped Open Space</span>
+      <span class="prop-badge">93 Parking (27 UG + 66 Surface)</span>
+      <span class="prop-badge green">DSCR 2.0x ✅</span>
+    </div>
+  </div>
+  <div class="prop-body">
+    <div class="prop-kpi">
+      <div class="kpi-box"><span class="kpi-v">$32.5M</span><span class="kpi-l">Total Project Cost</span></div>
+      <div class="kpi-box"><span class="kpi-v green">2.0x</span><span class="kpi-l">DSCR ✅</span></div>
+      <div class="kpi-box"><span class="kpi-v">$1.35M</span><span class="kpi-l">Annual NOI</span></div>
+      <div class="kpi-box"><span class="kpi-v">$672K</span><span class="kpi-l">Yr1 Net Profit</span></div>
+      <div class="kpi-box"><span class="kpi-v">$18.2M</span><span class="kpi-l">Al's 20yr Return</span></div>
+      <div class="kpi-box"><span class="kpi-v green">$3.6M</span><span class="kpi-l">Land Value (est)</span></div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3>Development Costs</h3>
+        <table class="dt">
+          <thead><tr><th>Line Item</th><th class="r">Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Land ($65/sf × 54,809 sf dev area)</td><td class="r">$3,564,000</td></tr>
+            <tr><td>Hard Cost ($285/sf GFA × 81,085 sf)</td><td class="r">$23,109,225</td></tr>
+            <tr><td>Soft Cost (20%)</td><td class="r">$4,621,845</td></tr>
+            <tr><td>Contingency (5%)</td><td class="r">$1,155,461</td></tr>
+            <tr class="tot"><td>Total Project Cost</td><td class="r">$32,450,531</td></tr>
+            <tr class="hl"><td>Cost Per Unit</td><td class="r">$450,702</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="bridge-arrow">→</div>
-      <div class="bridge-phase">
-        <div class="bridge-phase-num">Phase 2 · Mo. 6–12</div>
-        <div class="bridge-phase-title">Permit Ready</div>
-        <div class="bridge-phase-amount">$3.5M Land</div>
-        <div class="bridge-phase-desc">Land value justified at $3.5M ($2.5M land + $500K approvals + $500K financing). BCH &amp; CMHC applications submitted. The $200K advance is reimbursed at first draw.</div>
+      <div>
+        <h3>BCH Capital Stack</h3>
+        <div class="stack-bar">
+          <div class="ss ss-d">50%</div>
+          <div class="ss ss-b">40% BCH</div>
+          <div class="ss ss-m">5%</div>
+          <div class="ss ss-e">5%</div>
+        </div>
+        <table class="dt">
+          <thead><tr><th>Source</th><th class="r">%</th><th class="r">Amount</th></tr></thead>
+          <tbody>
+            <tr><td>CMHC MLI Select (3.4%/50yr)</td><td class="r">50%</td><td class="r">$16,225,266</td></tr>
+            <tr><td>BCH Forgivable Grant</td><td class="r">40%</td><td class="r g">$12,980,212</td></tr>
+            <tr><td>Municipal Contribution</td><td class="r">5%</td><td class="r">$1,622,527</td></tr>
+            <tr><td>Owner Equity</td><td class="r">5%</td><td class="r">$1,622,527</td></tr>
+            <tr class="tot"><td>Total</td><td class="r">100%</td><td class="r">$32,450,531</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="bridge-arrow">→</div>
-      <div class="bridge-phase">
-        <div class="bridge-phase-num">Phase 3 · First Draw</div>
-        <div class="bridge-phase-title">BCH Structure Live</div>
-        <div class="bridge-phase-amount">$360K</div>
-        <div class="bridge-phase-desc">At first construction draw, $360K in existing debt is cleared via the BCH structure. The bridge phase is replaced by the permanent BCH/CMHC structure. Full project completion: Month 72.</div>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h3>Revenue &amp; NOI</h3>
+        <table class="dt">
+          <thead><tr><th>Item</th><th class="r">Annual</th></tr></thead>
+          <tbody>
+            <tr><td>Market Rent (50 units × $2,200/mo)</td><td class="r">$1,320,000</td></tr>
+            <tr><td>Affordable Rent (22 units × $1,300/mo)</td><td class="r">$343,200</td></tr>
+            <tr><td>Parking (93 × $75/mo)</td><td class="r">$83,700</td></tr>
+            <tr class="hl"><td>Gross Revenue</td><td class="r">$1,746,900</td></tr>
+            <tr><td>Vacancy (3%)</td><td class="r w">-$52,407</td></tr>
+            <tr><td>Effective Revenue</td><td class="r">$1,694,493</td></tr>
+            <tr><td>Total Operating Expenses (20.5%)</td><td class="r w">-$347,371</td></tr>
+            <tr class="hl"><td>NOI</td><td class="r g">$1,347,122</td></tr>
+            <tr><td>Annual Debt Service (CMHC 3.4%/50yr)</td><td class="r w">-$675,216</td></tr>
+            <tr class="tot"><td>Year 1 Net Profit</td><td class="r">$671,906</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h3>Al's Returns — 60/40 Split</h3>
+        <table class="dt">
+          <thead><tr><th>Component</th><th class="r">Amount</th><th class="r">Notes</th></tr></thead>
+          <tbody>
+            <tr><td>Day 1 Land Draw</td><td class="r g">$811,263</td><td class="r">Cash at signing (5% of TPC)</td></tr>
+            <tr><td>20yr Income (60% of net profit)</td><td class="r g">$9,700,000</td><td class="r">Yr1 $403K → Yr20 $494K</td></tr>
+            <tr class="hl"><td colspan="3" style="font-size:0.78rem;color:var(--muted);font-style:italic">Year 20 Lump Sum Buyout = Mortgage Paydown + Al's Equity Share</td></tr>
+            <tr><td>&nbsp;&nbsp;→ Mortgage Paydown</td><td class="r">$3,537,000</td><td class="r">$16.2M loan → balance at Yr20</td></tr>
+            <tr><td>&nbsp;&nbsp;→ Al's Equity Share (10.98% × gross equity)</td><td class="r">$4,200,000</td><td class="r">Land % of TPC × gross equity</td></tr>
+            <tr><td><strong>Year 20 Lump Sum Total</strong></td><td class="r g"><strong>$7,737,000</strong></td><td class="r">One-time exit payment</td></tr>
+            <tr class="tot"><td>AL'S TOTAL RETURN</td><td class="r">$18,248,263</td><td class="r">On $0 cash invested</td></tr>
+          </tbody>
+        </table>
+        <h3 style="margin-top:20px">Site &amp; Land Value Assessment</h3>
+        <table class="dt">
+          <thead><tr><th>Metric</th><th class="r">Value</th></tr></thead>
+          <tbody>
+            <tr><td>Total Site Area</td><td class="r">10,246.8 m² (110,284 sf)</td></tr>
+            <tr><td>Development Area</td><td class="r">5,091.8 m² (54,809 sf)</td></tr>
+            <tr><td>EPA (Environmental Protection)</td><td class="r">5,155.0 m² (~50% of site)</td></tr>
+            <tr><td>Land Value in Capital Stack</td><td class="r">$3,564,000 ($65/sf dev area)</td></tr>
+            <tr><td>GFA</td><td class="r">7,533 m² / 81,085 sf</td></tr>
+            <tr><td>Building Footprint</td><td class="r">1,255.4 m² (24.4% lot coverage)</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="section" style="padding-top:0">
-  <div class="section-title">Overview</div>
-  <h2>Project Snapshot</h2>
-  <div class="grid-4">
-    <div class="card highlight"><div class="metric-label">Total Units</div><div class="metric-value">72</div><div class="metric-sub">Purpose-built rental · 6 storeys</div></div>
-    <div class="card highlight"><div class="metric-label">Affordable Units (30%)</div><div class="metric-value">22</div><div class="metric-sub">BCH requirement · included in 72</div></div>
-    <div class="card highlight"><div class="metric-label">Total Project Cost</div><div class="metric-value" style="font-size:22px">$29.4M</div><div class="metric-sub">BCH-funded structure</div></div>
-    <div class="card highlight"><div class="metric-label">Land Value</div><div class="metric-value" style="font-size:22px">$3.5M</div><div class="metric-sub">$2.5M land + $500K approvals + $500K financing</div></div>
-  </div>
-  <div style="margin-top:20px; padding:16px 20px; background:#0d2137; border:1px solid #1e3a5f; border-radius:10px; font-size:13px; color:#78909c;">
-    <strong style="color:#4fc3f7">Site Details:</strong>&nbsp; 286 Ardagh Road, Barrie ON · Total Site: 10,246.8 m² · Development Area: 5,091.8 m² · EPA: 5,155.0 m² · Zoning: RA2-1 · GFA: 7,533 m² (81,084.5 ft²) · Footprint: 1,255.4 m² · Height: 19.7 m (max 30 m) · Density: 141.4 upha · Parking: 93 spaces (27 underground + 66 surface) · Lot Coverage: 24.4%
-  </div>
-</div>
+    <h3>Feasibility — 3-Scenario Analysis</h3>
+    <div class="feasibility-grid">
+      <div class="feas-card feas-bear">
+        <div class="feas-label" style="color:#dc2626">Bear 🔴</div>
+        <div class="feas-val" style="color:#dc2626">1.72x</div>
+        <div class="feas-sub">DSCR — Still viable</div>
+        <div class="feas-rows">
+          <div><span>Rent Growth</span><span>1.5%/yr</span></div>
+          <div><span>Vacancy</span><span>6%</span></div>
+          <div><span>NOI</span><span>~$1.15M</span></div>
+          <div><span>LO 20yr Return</span><span>~$14.6M</span></div>
+        </div>
+      </div>
+      <div class="feas-card feas-base">
+        <div class="feas-label" style="color:var(--green)">Base ⚪ — Current</div>
+        <div class="feas-val" style="color:var(--green)">2.0x</div>
+        <div class="feas-sub">DSCR — Strong</div>
+        <div class="feas-rows">
+          <div><span>Rent Growth</span><span>2.5%/yr</span></div>
+          <div><span>Vacancy</span><span>3%</span></div>
+          <div><span>NOI</span><span>$1.35M</span></div>
+          <div><span>LO 20yr Return</span><span>$18.2M</span></div>
+        </div>
+      </div>
+      <div class="feas-card feas-bull">
+        <div class="feas-label" style="color:#92400e">Bull 🟢</div>
+        <div class="feas-val" style="color:#92400e">2.35x</div>
+        <div class="feas-sub">DSCR — Excellent</div>
+        <div class="feas-rows">
+          <div><span>Rent Growth</span><span>3.5%/yr</span></div>
+          <div><span>Vacancy</span><span>1.5%</span></div>
+          <div><span>NOI</span><span>~$1.57M</span></div>
+          <div><span>LO 20yr Return</span><span>~$22.8M</span></div>
+        </div>
+      </div>
+    </div>
 
-<div class="section" style="padding-top:0">
-  <div class="section-title">Financing</div>
-  <h2>BCH Capital Stack</h2>
-  <div class="grid-2">
-    <div class="card">
-      <div class="stack-bar"><div class="stack-label"><span>BCH Grant (40%)</span><span style="color:#66bb6a">$11.76M</span></div><div class="stack-track"><div class="stack-fill fill-green" style="width:40%">40%</div></div></div>
-      <div class="stack-bar"><div class="stack-label"><span>CMHC MLI Select (45%)</span><span style="color:#4fc3f7">$13.23M</span></div><div class="stack-track"><div class="stack-fill fill-blue" style="width:45%">45%</div></div></div>
-      <div class="stack-bar"><div class="stack-label"><span>Municipal Contribution (5%)</span><span style="color:#ce93d8">$1.47M</span></div><div class="stack-track"><div class="stack-fill fill-purple" style="width:5%"></div></div></div>
-      <div class="stack-bar"><div class="stack-label"><span>Your Land Equity (5%)</span><span style="color:#ffcc02">$1.47M</span></div><div class="stack-track"><div class="stack-fill fill-orange" style="width:5%"></div></div></div>
-      <div class="stack-bar"><div class="stack-label"><span>Team Equity (5%)</span><span style="color:#80cbc4">$1.47M</span></div><div class="stack-track"><div class="stack-fill fill-teal" style="width:5%"></div></div></div>
-      <div style="margin-top:16px; padding-top:16px; border-top:1px solid #1e3a5f; display:flex; justify-content:space-between;"><span style="color:#78909c">TOTAL</span><span style="color:#e8eaf6; font-weight:700">$29.4M ✓</span></div>
-    </div>
-    <div class="card">
-      <div class="metric-label" style="margin-bottom:20px">Key Financing Terms</div>
-      <table>
-        <tr><td style="color:#78909c">CMHC Rate</td><td style="text-align:right; color:#4fc3f7">3.40%</td></tr>
-        <tr><td style="color:#78909c">Amortization</td><td style="text-align:right; color:#4fc3f7">50 years</td></tr>
-        <tr><td style="color:#78909c">LTV</td><td style="text-align:right; color:#4fc3f7">95%</td></tr>
-        <tr><td style="color:#78909c">BCH Grant</td><td style="text-align:right; color:#66bb6a">Non-repayable ✓</td></tr>
-        <tr><td style="color:#78909c">Annual Mortgage Payment</td><td style="text-align:right">~$549K</td></tr>
-        <tr><td style="color:#78909c">DSCR</td><td style="text-align:right; color:#66bb6a; font-weight:700">2.0x ✅</td></tr>
-      </table>
-    </div>
-  </div>
-</div>
-
-<div class="section" style="padding-top:0">
-  <div class="section-title">For the Landowner</div>
-  <h2>Your Financial Returns — 20-Year Picture</h2>
-  <div class="grid-3">
-    <div class="card green"><div class="metric-label">Debt Reduction at First Draw</div><div class="metric-value green" style="font-size:32px">$360K</div><div class="metric-sub">Existing debt cleared via BCH first draw — no cash out of pocket</div></div>
-    <div class="card green"><div class="metric-label">Year 1 Annual Income (60% NOI)</div><div class="metric-value green">$400K</div><div class="metric-sub">NFP share · grows ~5% annually</div></div>
-    <div class="card green"><div class="metric-label">Affordable Units</div><div class="metric-value green" style="font-size:32px">22</div><div class="metric-sub">30% of 72 units · BCH requirement met</div></div>
-    <div class="card"><div class="metric-label">Mortgage Paydown @ Yr 20</div><div class="metric-value gold">$3.0M</div><div class="metric-sub">NFP equity growth</div></div>
-    <div class="card"><div class="metric-label">Year 20 Buyout</div><div class="metric-value gold" style="font-size:24px">~$4.5M</div><div class="metric-sub">Full equity return to NFP</div></div>
-    <div class="card highlight"><div class="metric-label">DSCR · IRR</div><div class="metric-value" style="font-size:24px; color:#ffd54f">2.0x · 17%</div><div class="metric-sub">Fully government-backed · No cash required</div></div>
-  </div>
-</div>
-
-<div class="section" style="padding-top:0">
-  <div class="section-title">Cash Flow</div>
-  <h2>Operating Income Split</h2>
-  <div class="grid-2">
-    <div class="card highlight"><div class="metric-label">NFP / Land Owner Share</div><div class="metric-value" style="font-size:48px">60%</div><div class="metric-sub">Of all net income after mortgage</div></div>
-    <div class="card"><div class="metric-label">TRMIG - K0re Operating Share</div><div class="metric-value" style="font-size:48px; color:#78909c">40%</div><div class="metric-sub">Dev Manager · Property Manager · Equity Share · Reverse Buyout Option</div></div>
-  </div>
-  <div class="equity-box" style="border-color:#4fc3f7; margin-top:24px">
-    <div style="font-size:13px; letter-spacing:2px; color:#4fc3f7; text-transform:uppercase; margin-bottom:16px">NOI Split Lifecycle — 3 Phases</div>
-    <div class="equity-row">
-      <span class="equity-label"><strong style="color:#e8eaf6">Phase 1</strong> · Operations (Month 1 → Capital Raise)</span>
-      <span class="equity-value" style="color:#4fc3f7">NFP 60% · TRMIG 40%</span>
-    </div>
-    <div class="equity-row">
-      <span class="equity-label"><strong style="color:#e8eaf6">Phase 2</strong> · Post Capital Raise (→ Year 20 Buyout)</span>
-      <span class="equity-value" style="color:#ffd54f">TRMIG 60% · NFP 40%</span>
-    </div>
-    <div class="equity-row">
-      <span class="equity-label"><strong style="color:#e8eaf6">Phase 3</strong> · Year 20 Buyout</span>
-      <span class="equity-value" style="color:#66bb6a">NFP full ownership ✓</span>
-    </div>
-    <div style="margin-top:16px; padding:16px; background:#0d1f35; border-radius:8px; border-left:3px solid #ffd54f">
-      <div style="font-size:12px; color:#ffd54f; font-weight:600; margin-bottom:6px">⚡ Capital Raise Bonus</div>
-      <div style="font-size:12px; color:#90a4ae">If TRMIG raises capital to pay off investors ahead of Month 77, TRMIG earns a bonus on capital raised:</div>
-      <div style="font-size:12px; color:#e8eaf6; margin-top:6px">· Before Month 48: <strong>5% bonus</strong> on capital raised</div>
-      <div style="font-size:12px; color:#e8eaf6">· Month 48–60: <strong>3% bonus</strong> on capital raised</div>
-      <div style="font-size:12px; color:#e8eaf6">· After Month 60: <strong>no bonus</strong> (baseline)</div>
-      <div style="font-size:12px; color:#546e7a; margin-top:6px">Bonus paid from capital raised — not from NFP cash flow. NFP gains unencumbered NOI for the remaining property life.</div>
-    </div>
-  </div>
-  <div class="equity-box">
-    <div style="font-size:13px; letter-spacing:2px; color:#ffd54f; text-transform:uppercase; margin-bottom:16px">Equity Owner Payoff — NFP Reverse Structure</div>
-    <div style="font-size:13px; color:#90a4ae; margin-bottom:20px">NFP-owned = reversed structure. TRMIG - K0re operates as Development Manager + Property Manager + equity partner. Al holds 60% NOI; TRMIG - K0re's 40% covers its operating roles and eventual reverse buyout exit.</div>
-    <div class="equity-row"><span class="equity-label">Land value justified ($2.5M + $500K + $500K)</span><span class="equity-value">$3.5M ✓</span></div>
-    <div class="equity-row"><span class="equity-label">Existing debt cleared at first draw</span><span class="equity-value">$360K ✓</span></div>
-    <div class="equity-row"><span class="equity-label">Construction period</span><span class="equity-value">~36 months</span></div>
-    <div class="equity-row"><span class="equity-label">Lease-up period</span><span class="equity-value">+12 months</span></div>
-    <div class="equity-row"><span class="equity-label">NOI distributions to equity payoff</span><span class="equity-value">+29 months</span></div>
-    <div class="equity-row" style="margin-top:4px"><span class="equity-label" style="color:#e8eaf6; font-weight:600">Equity owners fully paid off by</span><span class="equity-value" style="color:#66bb6a; font-size:18px">~Month 77 🎉</span></div>
-    <div style="font-size:12px; color:#546e7a; margin-top:12px">⚡ Possible acceleration via construction cost savings — conservative baseline is Month 77.</div>
-  </div>
-</div>
-
-<div class="section" style="padding-top:0">
-  <div class="section-title">Risk Profile</div>
-  <h2>Your Protections</h2>
-  <div class="grid-2">
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">🏗️</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">Zero Construction Risk</div><div style="font-size:13px; color:#78909c">Fixed-price Cube modular contracts. Cost overruns are never your problem.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">🏛️</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">CMHC Senior Lender</div><div style="font-size:13px; color:#78909c">Government-backed mortgage insurance — safest financing structure in Canada.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">💰</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">No Cash Required</div><div style="font-size:13px; color:#78909c">Your land is your equity. Zero cash out of pocket at any stage.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">📋</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">Legally Binding Docs</div><div style="font-size:13px; color:#78909c">Full LOI, Land Lease Agreement &amp; PSA — every term documented and enforceable.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">🔒</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">Guaranteed Exit</div><div style="font-size:13px; color:#78909c">NFP contractually obligated to purchase land at Year 20 at fair-market value.</div></div>
-    <div class="card"><div style="font-size:24px; margin-bottom:8px">⚡</div><div style="font-weight:600; margin-bottom:6px; color:#4fc3f7">Fast Delivery</div><div style="font-size:13px; color:#78909c">Cube modular systems — income begins within 18 months of LOI signing.</div></div>
-  </div>
-</div>
-
-<div class="section" style="padding-top:0">
-  <div class="section-title">Process</div>
-  <h2>Timeline to Income</h2>
-  <div class="card">
-    <div class="timeline">
-      <div class="timeline-step"><div class="timeline-dot">1</div><div class="timeline-title">Now</div><div class="timeline-desc">LOI Signed · $200K advanced</div></div>
-      <div class="timeline-step"><div class="timeline-dot">2</div><div class="timeline-title">Mo. 1–6</div><div class="timeline-desc">PSA Executed · Permit-ready work begins</div></div>
-      <div class="timeline-step"><div class="timeline-dot">3</div><div class="timeline-title">Mo. 6–12</div><div class="timeline-desc">BCH / CMHC Approval · Land → $3.5M</div></div>
-      <div class="timeline-step"><div class="timeline-dot">4</div><div class="timeline-title">First Draw</div><div class="timeline-desc">$360K debt cleared · BCH structure live</div></div>
-      <div class="timeline-step"><div class="timeline-dot">5</div><div class="timeline-title">Mo. 12–18</div><div class="timeline-desc">Construction (Cube modular)</div></div>
-      <div class="timeline-step"><div class="timeline-dot">6</div><div class="timeline-title">Mo. 36</div><div class="timeline-desc">Construction complete</div></div>
-      <div class="timeline-step"><div class="timeline-dot">7</div><div class="timeline-title">Mo. 48</div><div class="timeline-desc">Lease-up complete · Income begins 🎉</div></div>
-      <div class="timeline-step"><div class="timeline-dot">8</div><div class="timeline-title">Mo. 77</div><div class="timeline-desc">Equity owners paid off · Reverse buyout option</div></div>
+    <div class="flags-block">
+      <div class="flag flag-a"><span class="flag-icon">✅</span><div><strong>Strong DSCR 2.0x — Clean BCH Qualification</strong>Best coverage ratio of the two plans for 286 Ardagh Road. Straightforward BCH and CMHC MLI Select submission path. Debt service is well covered with healthy buffer.</div></div>
+      <div class="flag flag-n"><span class="flag-icon">✅</span><div><strong>Zoning RA2-1</strong>Existing zoning supports multi-residential use. Confirm whether 6-storey height requires any variances under current RA2-1 permissions — minor process if needed.</div></div>
+      <div class="flag flag-w"><span class="flag-icon">⚠️</span><div><strong>EPA: ~50% of Site is Environmental Protection Area</strong>Development is limited to the 5,091.8 m² non-EPA portion. EPA land (5,155 m²) cannot be built upon. This is already factored into the development cost and land value assumptions.</div></div>
+      <div class="flag flag-w"><span class="flag-icon">⚠️</span><div><strong>Parking Deficit: 93 Provided vs. 108 Required</strong>A deficit of 15 parking spaces. A minor variance or parking study may be required as part of the site plan approval process.</div></div>
+      <div class="flag flag-n"><span class="flag-icon">ℹ️</span><div><strong>Interior Side Yard: 3.9m West vs. 5.0m Required</strong>Minor variance needed for the western interior side yard setback. Low-risk Committee of Adjustment application — commonly approved for infill residential projects in Barrie.</div></div>
     </div>
   </div>
 </div>
 
-<div class="section" style="padding-top:0">
-  <div class="recommendation-box">
-    <div style="font-size:13px; letter-spacing:3px; color:#81c784; text-transform:uppercase; margin-bottom:12px">Recommendation</div>
-    <h2>🔄 RE-STRUCTURE</h2>
-    <p>Land value justified at $3.5M ($2.5M NFP land + $500K approvals + $500K financing) · DSCR 2.0x · IRR 17%</p>
-    <p style="margin-top:8px; font-size:13px; color:#a5d6a7">NFP-owned reverse structure: TRMIG - K0re as Dev Manager + Property Manager + Equity Partner with reverse buyout option · 72 units · 22 affordable</p>
-  </div>
-</div>
+<footer>
+  <div><span>Ubuntu LTD × TRMIG</span> — Al's Property · 286 Ardagh Road, Barrie · Concept Plan Assessment</div>
+  <div>Prepared exclusively for Al — Confidential — April 15, 2026</div>
+</footer>
 
-<div class="section" style="padding-top:0">
-  <div class="section-title">Action</div>
-  <h2>Next Steps</h2>
-  <div class="card">
-    <table>
-      <tr><td style="width:32px; font-size:18px">✅</td><td>Review this proposal with your family or legal advisor</td></tr>
-      <tr><td style="font-size:18px">✅</td><td>Schedule a site walkthrough with Calvin Lee / TRMIG - K0re</td></tr>
-      <tr><td style="font-size:18px">✅</td><td>Sign Letter of Intent (LOI) — 12-month exclusivity period</td></tr>
-      <tr><td style="font-size:18px">✅</td><td>Ubuntu LTD submits BCH &amp; CMHC financing applications</td></tr>
-      <tr><td style="font-size:18px">✅</td><td>Proceed to Purchase &amp; Sale Agreement (PSA)</td></tr>
-    </table>
-  </div>
-</div>
-
-<div class="footer">
-  <strong>Calvin Lee</strong> · TRMIG - K0re · Common Ground Initiative<br>
-  Confidential — Prepared for Al · April 2026<br><br>
-  <em>286 Ardagh Road, Barrie ON · Concept Plan (Oct 19, 2023) · Land Restructure · NFP-Owned · TRMIG - K0re as Operating Partner</em>
-</div>
 </body>
 </html>
